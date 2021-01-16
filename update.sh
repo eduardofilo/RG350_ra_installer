@@ -30,8 +30,8 @@ sleep 5
 
 # Copying retroarch icon to all GMenu2X skins
 for filename in /media/data/local/home/.gmenu2x/skins/*/; do
-    mkdir -p ${filename}sections
-    cp -f files/retroarch.png ${filename}sections
+    mkdir -p "${filename}sections"
+    cp -f files/retroarch.png "${filename}sections"
 done
 # Installing OPK and executable
 cp -f files/retroarch_rg350.opk /media/data/apps
@@ -60,10 +60,8 @@ if [ -f bios.tgz ] ; then
 fi
 sync
 echo "  DONE"
-sleep 1
 
+sleep 3
 
-sleep 2
-
-dialog --msgbox 'Installation completed!\n\nNow we are going to reboot. After pressing \Zb\Z3OK\Zn, let the console reboot itself, don't force it manually.' 16 0
+dialog --msgbox "Installation completed!\n\nNow we are going to reboot. After pressing \Zb\Z3OK\Zn, let the console reboot itself, don't force it manually." 16 0
 reboot
