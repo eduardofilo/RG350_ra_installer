@@ -1,0 +1,5 @@
+recursos/
+Patch_image*.opk
+squashfs-root/files/roms
+bios.tgz
+RA_Installer*.opk
