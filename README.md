@@ -10,7 +10,7 @@ Once everything is in place, the only way to run the ROMs with the cores include
 
 ![Frontend](images/frontend.png)
 
-To achieve a more complete integration of RetroArch, respecting the normal experience of the usual frontends in RG350 / RG280 (GMenu2X, SimpleMenu, PyMenu, etc.), wrapper-type OPKs can be created that allow selecting the ROMs and launching the corresponding RetroArch core, since the `retroarch` binary/executable inside the OPK supports the same arguments as RetroArch on other platforms.
+To achieve a more complete integration of RetroArch, respecting the normal experience of the usual frontends in RG350 / RG280 (GMenu2X, SimpleMenu, PyMenu, EmulationStation, etc.), wrapper-type OPKs can be created that allow selecting the ROMs and launching the corresponding RetroArch core, since the `retroarch` binary/executable inside the OPK supports the same arguments as RetroArch on other platforms.
 
 ## OPK wrappers
 
@@ -27,7 +27,7 @@ Therefore, the idea is, first, to install the RetroArch executable/binary that i
 /media/data/local/bin/retroarch -v -L /media/data/local/home/.retroarch/cores/gambatte_libretro.so --config /media/data/local/home/.retroarch/retroarch.cfg "$1"
 ```
 
-We introduce the previous script together with an appropriate icon for the system that is going to launch and a `.desktop` that invokes the script passing the ROM as an argument, for example:
+We put the previous script together with an appropriate icon for the system that is going to launch and a `.desktop` that invokes the script passing the ROM as an argument, for example:
 
 ```
 [Desktop Entry]
@@ -79,3 +79,21 @@ As there are several pieces necessary for the set to work, an installer has been
 * New section with the RetroArch icon in all the skins installed in GMenu2X where all the OPK launchers appear.
 
 The OPK with the installer can be obtained in the releases of [this repository](https://github.com/eduardofilo/RG350_ra_installer/releases/latest).
+
+## Hoykeys
+
+In RetroArch configuration file the following hotkeys have been defined.
+
+|Function|Shortcut|
+|:-------|:-------|
+|Pause|`Select + A`|
+|Reset|`Select + B`|
+|RetroArch Menu|`Select + X`|
+|Fast forward|`Select + Y`|
+|Savestate save|`Select + R1`|
+|Savestate load|`Select + L1`|
+|Swap disk|`Select + R2`|
+|Open CD tray|`Select + L2`|
+|Close content|`Select + Start`|
+|Savestate slot changing|`Select + ←→`|
+|Volume changing|`Select + ↑↓`|
