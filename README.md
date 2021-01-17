@@ -78,4 +78,4 @@ As there are several pieces necessary for the set to work, an installer has been
 * GMenu2X filters by extension for each system (including `7z` in all systems and `chd` in CD systems).
 * New section with the RetroArch icon in all the skins installed in GMenu2X where all the OPK launchers appear.
 
-The OPK with the installer can be obtained in the releases of [this repository](releases).
+The OPK with the installer can be obtained in the releases of [this repository](/eduardofilo/RG350_ra_installer/releases/latest).
