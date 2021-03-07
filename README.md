@@ -49,7 +49,7 @@ This are the cores offered by the latest version of RetroArch released at the ti
 * fbalpha2012_neogeo_libretro: Neo Geo
 * fceumm_libretro: NES
 * gambatte_libretro: GB/GBC
-* genesis_plus_gx_libretro: MD, MS, GG, SEGA CD
+* genesis_plus_gx_libretro and genesis_plus_gx_wide_libretro: MD, MS, GG, SEGA CD
 * gpsp_libretro: GBA
 * handy_libretro: LYNX
 * mednafen_pce_fast_libretro: PCE, PCE CD
@@ -65,6 +65,10 @@ This are the cores offered by the latest version of RetroArch released at the ti
 * snes9x2005_plus_libretro: SNES
 * tyrquake_libretro: QUAKE
 * vice_x64_libretro: C64
+* stella2014_libretro: Atari 2600
+* prosystem_libretro: Atari 7800
+* scummvm_libretro: ScummVM
+* tic80_libretro: TIC-80
 
 Therefore, we have to make one OPK at least for each of them. We say *at least* because the option of making an OPK for each "core/system to emulate" combination can be considered.
 
