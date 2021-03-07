@@ -1,0 +1,6 @@
+title=DosBox (RA)
+description=DosBox in RetroArch
+icon=/media/data/apps/retroarch_rg350_DOSBOX.opk#icon.png
+selectorfilter=zip,dosz,exe,com,bat,iso,cue,ins,img,ima,vhd,m3u,m3u8,7z
+clock=1080
+selectordir=/media/sdcard/roms/DOSBOX/Alone in the Dark/

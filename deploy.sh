@@ -3,7 +3,7 @@
 VERSION=`cat v`
 BIOS=false
 OPK_NAME=RA_Installer_v${VERSION}.opk
-DIRECTORY=${HOME}/Documents/rg350_ra_installer
+DIRECTORY=$(pwd)
 
 
 # create default.gcw0.desktop
