@@ -69,6 +69,7 @@ This are the cores offered by the latest version of RetroArch released at the ti
 * prosystem_libretro: Atari 7800
 * scummvm_libretro: ScummVM
 * tic80_libretro: TIC-80
+* potator_libretro: Watara Supervision
 
 Therefore, we have to make one OPK at least for each of them. We say *at least* because the option of making an OPK for each "core/system to emulate" combination can be considered.
 
