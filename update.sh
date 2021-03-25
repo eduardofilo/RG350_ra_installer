@@ -63,11 +63,6 @@ if [ -f bios.tgz ] ; then
     tar -xzf bios.tgz -C /media/data/local/home/.retroarch/system
     chown -R root:root /media/data/local/home/.retroarch
 fi
-# Installing DosBox Pure core
-cp -f files/dosbox_pure/retroarch_rg350_DOSBOX.opk /media/data/apps
-cp -f files/dosbox_pure/retroarch_rg350_DOSBOX_exec.shf /media/data/local/home/.gmenu2x/sections/retroarch
-cp -f files/dosbox_pure/dosbox_pure_libretro.info /media/data/local/home/.retroarch/core_info
-cp -f files/dosbox_pure/dosbox_pure_libretro.so /media/data/local/home/.retroarch/cores
 sync
 echo "  DONE"
 
