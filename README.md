@@ -72,6 +72,7 @@ This are the cores offered by the latest version of RetroArch released at the ti
 * potator_libretro: Watara Supervision
 * dosbox_pure_libretro: DOSBox
 * o2em_libretro: Magnavox Odyssey2, Phillips Videopac+
+* mame2003_libretro, mame2003_plus_libretro: MAME2003
 
 Therefore, we have to make one OPK at least for each of them. We say *at least* because the option of making an OPK for each "core/system to emulate" combination can be considered.
 
