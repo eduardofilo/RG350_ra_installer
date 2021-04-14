@@ -42,7 +42,7 @@ Categories=retroarch;
 X-OD-NeedsDownscaling=true
 ```
 
-This are the cores offered by the latest version of RetroArch released at the time of writing (2021-03-25).
+This are the cores offered by the latest version of RetroArch released at the time of writing (2021-04-09).
 
 * fbalpha2012_cps1_libretro: CPS1
 * fbalpha2012_cps2_libretro: CPS2
@@ -80,7 +80,7 @@ Therefore, we have to make one OPK at least for each of them. We say *at least* 
 
 As there are several pieces necessary for the set to work, an installer has been created to install everything you need in one go. Specifically, the installer integrates this items:
 
-* 35 OPKs to launch the different core/system combinations independently from different frontends (GMenu2X, SimpleMenu, PyMenu, EmulationStation, etc.) by previously selecting the ROM (Explorer mode).
+* 37 OPKs to launch the different core/system combinations independently from different frontends (GMenu2X, SimpleMenu, PyMenu, EmulationStation, etc.) by previously selecting the ROM (Explorer mode).
 * Binary `retroarch` in common location (`/media/data/local/bin`) to be invoked by former OPKs to not be cloned inside them.
 * Configurations for all the cores differentiated by screen, that is, adequate configurations for 320x240 or 640x480 are installed depending on the screen detected. The settings have been adopted from the Retro Game Corps recommendations in [this guide](https://retrogamecorps.com/2020/12/24/guide-retroarch-on-rg350-and-rg280-devices/).
 * GMenu2X filters by extension for each system (including `7z` in all systems and `chd` in CD systems).
