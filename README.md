@@ -42,7 +42,7 @@ Categories=retroarch;
 X-OD-NeedsDownscaling=true
 ```
 
-This are the cores offered by the latest version of RetroArch released at the time of writing (2021-04-09).
+This are the cores offered by the latest version of RetroArch released at the time of writing (2021-04-15).
 
 * fbalpha2012_cps1_libretro: CPS1
 * fbalpha2012_cps2_libretro: CPS2
@@ -75,6 +75,8 @@ This are the cores offered by the latest version of RetroArch released at the ti
 * mame2003_libretro, mame2003_plus_libretro: MAME2003
 
 Therefore, we have to make one OPK at least for each of them. We say *at least* because the option of making an OPK for each "core/system to emulate" combination can be considered.
+
+**Warning**: Remember that following cores need BIOS files to run: LYNX, PC ENGINE CD, SEGA CD, VIDEOPAC.
 
 ## Installer
 
