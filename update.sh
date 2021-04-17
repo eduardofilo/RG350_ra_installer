@@ -68,5 +68,5 @@ echo "  DONE"
 
 sleep 3
 
-dialog --msgbox "Installation completed!\n\nNow we are going to reboot. After pressing \Zb\Z3OK\Zn, let the console reboot itself, don't force it manually." 16 0
+dialog --msgbox "Installation completed!\n\nRemember that following cores need BIOS files to run: LYNX, PC ENGINE CD, SEGA CD, VIDEOPAC.\n\nNow we are going to reboot. After pressing \Zb\Z3OK\Zn, let the console reboot itself, don't force it manually." 16 0
 reboot
