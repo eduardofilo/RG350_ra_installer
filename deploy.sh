@@ -78,7 +78,7 @@ if [ -f ${RA_DIST_DIR_ODB}/${RA_DIST_FILE} ] ; then
 Type=Application
 Name=RA OD Beta Installer v${VERSION}
 Comment=Installer for RetroArch v${VERSION} on OD Beta
-Exec=update.sh
+Exec=update_odb.sh
 Icon=icon
 Categories=applications;
 Terminal=true
