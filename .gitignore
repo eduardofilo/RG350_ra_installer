@@ -1,9 +1,13 @@
 recursos/
 releases/
-ra_distruibutions/
+ra_dist_st/
+ra_dist_odb/
 squashfs-root/files/roms
 bios.tgz
 RA_Installer*.opk
 files/retroarch_rg350.opk
 files/retroarch
 files/retroarch.tgz
+files_odb/retroarch_rg350_odbeta.opk
+files_odb/retroarch
+files_odb/retroarch.tgz
