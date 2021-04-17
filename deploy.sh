@@ -4,7 +4,17 @@ VERSION=`cat v`
 BIOS=false
 OPK_NAME=RA_Installer_v${VERSION}.opk
 DIRECTORY=$(pwd)
+RA_DISTRIBUTION=${VERSION}_RetroArch.7z
 
+
+# Unpacking ra distribution
+rm -rf ra_distruibutions/retroarch
+7z x -ora_distruibutions ra_distruibutions/${RA_DISTRIBUTION}
+unsquashfs -d ra_distruibutions/retroarch/fs ra_distruibutions/retroarch/retroarch_rg350.opk
+mv ra_distruibutions/retroarch/fs/retroarch files/
+mv ra_distruibutions/retroarch/retroarch_rg350.opk files/
+tar -czf files/retroarch.tgz -C ${DIRECTORY}/ra_distruibutions/retroarch/.retroarch assets core_info cores database filters system
+rm -rf ra_distruibutions/retroarch
 
 # create default.gcw0.desktop
 cat > ${DIRECTORY}/default.gcw0.desktop <<EOF
@@ -32,7 +42,7 @@ if [ -f ${DIRECTORY}/${OPK_NAME} ] ; then
     rm ${DIRECTORY}/${OPK_NAME}
 fi
 
-mksquashfs ${FLIST} ${DIRECTORY}/${OPK_NAME} -all-root -no-xattrs -noappend -no-exports
+mksquashfs ${FLIST} ${DIRECTORY}/releases/${OPK_NAME} -all-root -no-xattrs -noappend -no-exports
 rm -f ${DIRECTORY}/default.gcw0.desktop
 
-#scp ${DIRECTORY}/${OPK_NAME} rg350:/media/sdcard/apps/
+#scp ${DIRECTORY}/releases/${OPK_NAME} rg350:/media/sdcard/apps/

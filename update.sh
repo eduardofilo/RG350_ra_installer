@@ -31,32 +31,32 @@ sleep 5
 # Copying retroarch icon to all GMenu2X skins
 for filename in /media/data/local/home/.gmenu2x/skins/*/; do
     mkdir -p "${filename}sections"
-    cp -f files/retroarch/retroarch.png "${filename}sections"
+    cp -f files/retroarch.png "${filename}sections"
 done
 if [ -d /media/data/local/home/.gmenu2x/skins/Pixel ] ; then
     mkdir -p /media/data/local/home/.gmenu2x/skins/Pixel/sections
-    cp -f files/retroarch/retroarch_pixel.png /media/data/local/home/.gmenu2x/skins/Pixel/sections/retroarch.png
+    cp -f files/retroarch_pixel.png /media/data/local/home/.gmenu2x/skins/Pixel/sections/retroarch.png
 fi
 # Installing OPK and executable
-cp -f files/retroarch/retroarch_rg350.opk /media/data/apps
-cp -f files/retroarch/retroarch /media/data/local/bin
+cp -f files/retroarch_rg350.opk /media/data/apps
+cp -f files/retroarch /media/data/local/bin
 # Installing OPK wrappers for cores
-tar -xzf files/retroarch/apps_ra.tgz -C /media/data/apps
+tar -xzf files/apps_ra.tgz -C /media/data/apps
 chown -R root:root /media/data/apps
 # Installing home files
 mkdir -p /media/data/local/home/.retroarch
-tar -xzf files/retroarch/retroarch.tgz -C /media/data/local/home/.retroarch
+tar -xzf files/retroarch.tgz -C /media/data/local/home/.retroarch
 chown -R root:root /media/data/local/home/.retroarch
 # Installing GMenu2X links
 mkdir -p /media/data/local/home/.gmenu2x/sections/retroarch
-tar -xzf files/retroarch/links.tgz -C /media/data/local/home/.gmenu2x/sections/retroarch
+tar -xzf files/links.tgz -C /media/data/local/home/.gmenu2x/sections/retroarch
 chown -R root:root /media/data/local/home/.gmenu2x/sections/retroarch
 # Installing configs
 if [[ "$MODEL" == "RG350P" ]] ; then
-    tar -xzf files/retroarch/configs_P.tgz -C /media/data/local/home/.retroarch
+    tar -xzf files/configs_P.tgz -C /media/data/local/home/.retroarch
 fi
 if [[ "$MODEL" == "RG350M" ]] ; then
-    tar -xzf files/retroarch/configs_M.tgz -C /media/data/local/home/.retroarch
+    tar -xzf files/configs_M.tgz -C /media/data/local/home/.retroarch
 fi
 # Installing BIOS?
 if [ -f bios.tgz ] ; then

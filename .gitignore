@@ -1,5 +1,9 @@
 recursos/
-Patch_image*.opk
+releases/
+ra_distruibutions/
 squashfs-root/files/roms
 bios.tgz
 RA_Installer*.opk
+files/retroarch_rg350.opk
+files/retroarch
+files/retroarch.tgz
