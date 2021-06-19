@@ -18,8 +18,8 @@ if [ -f ${RA_DIST_DIR_ST}/${RA_DIST_FILE} ] ; then
         rm -rf ${RA_DIST_DIR_ST}/retroarch
     fi
     7z x -o${RA_DIST_DIR_ST} ${RA_DIST_DIR_ST}/${RA_DIST_FILE}
-    unsquashfs -d ${RA_DIST_DIR_ST}/retroarch/fs ${RA_DIST_DIR_ST}/retroarch/retroarch_rg350.opk
-    mv ${RA_DIST_DIR_ST}/retroarch/fs/retroarch files/
+    #unsquashfs -d ${RA_DIST_DIR_ST}/retroarch/fs ${RA_DIST_DIR_ST}/retroarch/retroarch_rg350.opk
+    mv ${RA_DIST_DIR_ST}/retroarch/bin/retroarch_rg350 files/
     mv ${RA_DIST_DIR_ST}/retroarch/retroarch_rg350.opk files/
     tar -czf files/retroarch.tgz -C ${DIRECTORY}/${RA_DIST_DIR_ST}/retroarch/.retroarch assets core_info cores database filters system
     rm -rf ${RA_DIST_DIR_ST}/retroarch
@@ -66,8 +66,8 @@ if [ -f ${RA_DIST_DIR_ODB}/${RA_DIST_FILE} ] ; then
         rm -rf ${RA_DIST_DIR_ODB}/retroarch
     fi
     7z x -o${RA_DIST_DIR_ODB} ${RA_DIST_DIR_ODB}/${RA_DIST_FILE}
-    unsquashfs -d ${RA_DIST_DIR_ODB}/retroarch/fs ${RA_DIST_DIR_ODB}/retroarch/retroarch_rg350_odbeta.opk
-    mv ${RA_DIST_DIR_ODB}/retroarch/fs/retroarch files_odb/
+    #unsquashfs -d ${RA_DIST_DIR_ODB}/retroarch/fs ${RA_DIST_DIR_ODB}/retroarch/retroarch_rg350_odbeta.opk
+    mv ${RA_DIST_DIR_ODB}/retroarch/bin/retroarch_rg350_odbeta files_odb/
     mv ${RA_DIST_DIR_ODB}/retroarch/retroarch_rg350_odbeta.opk files_odb/
     tar -czf files_odb/retroarch.tgz -C ${DIRECTORY}/${RA_DIST_DIR_ODB}/retroarch/.retroarch assets core_info cores database filters system
     rm -rf ${RA_DIST_DIR_ODB}/retroarch
