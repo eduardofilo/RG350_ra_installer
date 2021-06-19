@@ -135,3 +135,7 @@ In RetroArch configuration file the following hotkeys have been defined.
 |Close content|`Select + Start`|
 |Savestate slot changing|`Select + ←→`|
 |Volume changing|`Select + ↑↓`|
+
+## Telegram channel
+
+Join this Telegram channel to get updates: [https://t.me/RG350_ra_installer](https://t.me/RG350_ra_installer)
