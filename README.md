@@ -78,7 +78,7 @@ This are the cores offered by the latest version of RetroArch released at the ti
 |mame2003_libretro.so|MAME2003|zip| |
 |mame2003_plus_libretro.so|MAME2003|zip| |
 
-Additionally, the compilation of unofficial cores made by [Poligraf](https://github.com/Poligraf/opendingux_ra_cores_unofficial) is included (**WARNING** This compilation is an experiment by its author; some cores like hatari and puae have not been tested; feedback is welcome). This involves adding the following cores to the former list:
+Additionally, the compilation of unofficial cores made by [Poligraf](https://github.com/Poligraf/opendingux_ra_cores_unofficial) is included (**WARNING**: this compilation is an experiment by its author; some cores like hatari and puae have not been tested; feedback is welcome). This involves adding the following cores to the former list:
 
 |Core|System|Supported extensions|Observations|
 |:---|:-----|:-------------------|:-----------|
