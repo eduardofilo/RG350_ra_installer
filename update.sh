@@ -49,6 +49,12 @@ cp -f files/retroarch_rg350.opk /media/data/apps
 if [ -f /media/data/local/bin/retroarch ] ; then
     rm /media/data/local/bin/retroarch
 fi
+if [ -f /media/data/local/bin ] ; then
+    rm /media/data/local/bin
+fi
+if [ ! -d /media/data/local/bin ] ; then
+    mkdir /media/data/local/bin
+fi
 cp -f files/retroarch_rg350 /media/data/local/bin
 # Installing OPK wrappers for cores
 tar -xzf files/apps_ra.tgz -C /media/data/apps

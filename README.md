@@ -89,12 +89,12 @@ Additionally, the compilation of unofficial cores made by [Poligraf](https://git
 |freechaf_libretro.so|Fairchild ChannelF|bin, chf|Need BIOS: `sl31253.bin` (md5: `ac9804d4c0e9d07e33472e3726ed15c3`), `sl31254.bin` (md5: `da98f4bb3242ab80d76629021bb27585`), `sl90025.bin` (md5: `95d339631d867c8f1d15a5f2ec26069d`)|
 |fuse_libretro.so|Sinclair ZX Spectrum|tzx, tap, z80, rzx, scl, trd, dsk| |
 |gme_libretro.so|Game Music Emu|ay, gbs, gym, hes, kss, nsf, nsfe, sap, spc, vgm, vgz, zip| |
-|hatari_libretro.so|Atari ST|st, msa, zip, stx, dim, ipf, m3u|Need BIOS: `tos.img` (md5: `c1c57ce48e8ee4135885cee9e63a68a2`)|
+|hatari_libretro.so|Atari ST|st, msa, zip, stx, dim, ipf, m3u|Need BIOS: `tos.img` (md5: `c1c57ce48e8ee4135885cee9e63a68a2`). Difficult configuration. Achieved some success with RG350M, but not with RG350P|
 |mednafen_vb_libretro.so|Nintendo Virtual Boy|vb, vboy, bin|Poor performance|
 |nxengine_libretro.so|Cave Story|exe|Need game files|
 |puae_libretro.so|Commodore Amiga|adf, adz, dms, fdi, ipf, hdf, hdz, lha, slave, info, cue, ccd, nrg, mds, iso, chd, uae, m3u, zip, 7z|Need BIOS: `kick34005.A500` (md5: `82a21c1890cae844b3df741f2762d48d`)|
 |reminiscence_libretro.so|Flashback|map, aba, seq, lev|Need game files|
-|theodore_libretro.so|Thomson - MO/TO|fd, sap, k7, m7, m5, rom|Difficult configuration. Achieved some success with MO5 model in ODBeta, but not in stock/ROGUE|
+|theodore_libretro.so|Thomson - MO/TO|fd, sap, k7, m7, m5, rom|Difficult configuration. Achieved some success with MO5 model in ODBeta with RG350M, but not in stock/ROGUE|
 |uzem_libretro.so|Uzebox|uze|Poor performance|
 
 Therefore, we have to make one OPK at least for each of them. We say *at least* because the option of making an OPK for each "core/system to emulate" combination can be considered.
