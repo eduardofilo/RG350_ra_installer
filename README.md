@@ -94,7 +94,7 @@ Additionally, the compilation of unofficial cores made by [Poligraf](https://git
 |nxengine_libretro.so|Cave Story|exe|Need game files|
 |puae_libretro.so|Commodore Amiga|adf, adz, dms, fdi, ipf, hdf, hdz, lha, slave, info, cue, ccd, nrg, mds, iso, chd, uae, m3u, zip, 7z|Need BIOS: `kick34005.A500` (md5: `82a21c1890cae844b3df741f2762d48d`)|
 |reminiscence_libretro.so|Flashback|map, aba, seq, lev|Need game files|
-|theodore_libretro.so|Thomson - MO/TO|fd, sap, k7, m7, m5, rom|Difficult configuration. Achieved some success with MO5 model|
+|theodore_libretro.so|Thomson - MO/TO|fd, sap, k7, m7, m5, rom|Difficult configuration. Achieved some success with MO5 model in ODBeta, but not in stock/ROGUE|
 |uzem_libretro.so|Uzebox|uze|Poor performance|
 
 Therefore, we have to make one OPK at least for each of them. We say *at least* because the option of making an OPK for each "core/system to emulate" combination can be considered.

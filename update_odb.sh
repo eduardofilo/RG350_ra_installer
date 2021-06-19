@@ -94,5 +94,5 @@ fi
 
 sleep 3
 
-dialog --msgbox "Installation completed!\n\nRemember that following cores need BIOS files to run (LYNX, PC ENGINE CD, SEGA CD, VIDEOPAC, CHANNELF, ATARIST, AMIGA) or data files (OUTRUN, CAVESTORY, FLASHBACK).\n\nNow we are going to reboot. After pressing \Zb\Z3OK\Zn, let the console reboot itself, don't force it manually." 16 0
+dialog --msgbox "Installation completed!\n\nRemember that following cores need BIOS files to run (LYNX, PC ENGINE CD, SEGA CD, VIDEOPAC, CHANNELF, ATARI ST, AMIGA, BK) or data files (DOOM, QUAKE, OUTRUN, CAVESTORY, FLASHBACK).\n\nNow we are going to reboot. After pressing \Zb\Z3OK\Zn, let the console reboot itself, don't force it manually." 16 0
 reboot
