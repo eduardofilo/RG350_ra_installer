@@ -48,7 +48,7 @@ This are the cores offered by the latest version of RetroArch released at the ti
 |:---|:-----|:-------------------|:-----------|
 |fbalpha2012_cps1_libretro.so|CPS1|zip| |
 |fbalpha2012_cps2_libretro.so|CPS2|zip| |
-|fbalpha2012_neogeo_libretro.so|zip|Neo Geo| |
+|fbalpha2012_neogeo_libretro.so|Neo Geo|zip| |
 |fceumm_libretro.so|NES|fds, nes, unif, unf|Disk System need BIOS: `disksys.rom` (md5: `ca30b50f880eb660a320674ed365ef7a`)|
 |gambatte_libretro.so|GB/GBC|gb, gbc, dmg|Optional BIOS: `gb_bios.bin` (md5: `32fbbd84168d3482956eb3c5051637f5`), `gbc_bios.bin` (md5: `dbfce9db9deaa2567f6a84fde55f9680`)|
 |genesis_plus_gx_libretro.so|MD, MS, GG, SEGA CD|mdx, md, smd, gen, bin, cue, iso, sms, bms, gg, sg, 68k, chd, m3u|SEGA CD need BIOS: `bios_CD_E.bin`, `bios_CD_U.bin`, `bios_CD_J.bin`|
@@ -59,7 +59,7 @@ This are the cores offered by the latest version of RetroArch released at the ti
 |mednafen_wswan_libretro.so|WS|ws, wsc, pc2| |
 |mgba_libretro.so|GBA|gb, gbc, gba|Optional BIOS: `gba_bios.bin` (md5: `a860e8c0b6d573d191e4ec7db1b1e4f6`)|
 |mrboom_libretro.so|MrBoom| | |
-|picodrive_libretro.so|MD, MS, SEGA CD, SEGA 32X|bin, gen, smd, md, 32x, chd, cue, iso, sms, 68k, m3u|SECA CD need BIOS: `bios_CD_U.bin` (md5: `2efd74e3232ff260e371b99f84024f7f`), `bios_CD_E.bin` (md5: `e66fa1dc5820d254611fdcdba0662372`), `bios_CD_J.bin` (md5: `278a9397d192149e84e820ac621a8edd`)|
+|picodrive_libretro.so|MD, MS, SEGA CD, SEGA 32X|bin, gen, smd, md, 32x, chd, cue, iso, sms, 68k, m3u|SEGA CD need BIOS: `bios_CD_U.bin` (md5: `2efd74e3232ff260e371b99f84024f7f`), `bios_CD_E.bin` (md5: `e66fa1dc5820d254611fdcdba0662372`), `bios_CD_J.bin` (md5: `278a9397d192149e84e820ac621a8edd`)|
 |pokemini_libretro.so|POKEMINI|min|Need BIOS: `bios.min` (md5: `1e4fb124a3a886865acb574f388c803d`)|
 |prboom_libretro.so|DOOM|wad, iwad, pwad|Need game files|
 |quicknes_libretro.so|NES|nes| |
@@ -84,7 +84,7 @@ Additionally, the compilation of unofficial cores made by [Poligraf](https://git
 |:---|:-----|:-------------------|:-----------|
 |81_libretro.so|Sinclair ZX81|p, tzx, t81| |
 |bk_libretro.so|Elektronika - BK-0010/BK-0011|bin|Need BIOS: `bk/BASIC10.ROM` (md5: `3fa774326d75410a065659aea80252f0`), `bk/FOCAL10.ROM` (md5: `5737f972e8638831ab71e9139abae052`), `bk/MONIT10.ROM` (md5: `95f8c41c6abf7640e35a6a03cecebd01`)|
-|cannonball_libretro.so|SEGA Outrun|game, 88|Need game files and a dummy file with the extension .game|
+|cannonball_libretro.so|SEGA Outrun|game, 88|Need game files and a dummy file with the extension `.game`|
 |cap32_libretro.so|Amstrad CPC|dsk, sna, zip, tap, cdt, voc, cpr, m3u| |
 |freechaf_libretro.so|Fairchild ChannelF|bin, chf|Need BIOS: `sl31253.bin` (md5: `ac9804d4c0e9d07e33472e3726ed15c3`), `sl31254.bin` (md5: `da98f4bb3242ab80d76629021bb27585`), `sl90025.bin` (md5: `95d339631d867c8f1d15a5f2ec26069d`)|
 |fuse_libretro.so|Sinclair ZX Spectrum|tzx, tap, z80, rzx, scl, trd, dsk| |
