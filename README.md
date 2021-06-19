@@ -1,4 +1,4 @@
-![Icon](images/icon.png)
+![Icon](images/icon_big.png)
 
 In December, official RetroArch distributions for RG350 and RG280 began to appear. At the moment they are beta versions in the form of nightly builds that can be obtained from [this site](https://buildbot.libretro.com/nightly/dingux/mips32/) for stock/ROGUE or [this other](https://buildbot.libretro.com/nightly/dingux/mips32-odbeta/) for [ODBeta](http://od.abstraction.se/opendingux/latest/).
 
