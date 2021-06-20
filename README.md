@@ -138,4 +138,4 @@ In RetroArch configuration file the following hotkeys have been defined.
 
 ## Telegram channel
 
-Join this Telegram channel to get updates: [https://t.me/RG350_ra_installer](https://t.me/RG350_ra_installer)
+Join this Telegram channel to get update notifications: [https://t.me/RG350_ra_installer](https://t.me/RG350_ra_installer)
