@@ -42,7 +42,7 @@ Categories=retroarch;
 X-OD-NeedsDownscaling=true
 ```
 
-This are the cores offered by the latest version of RetroArch released at the time of writing (2021-06-18):
+This are the cores offered by the latest version of RetroArch released at the time of writing (2021-07-04):
 
 |Core|System|Supported extensions|Observations|
 |:---|:-----|:-------------------|:-----------|
@@ -120,7 +120,7 @@ Therefore, we have to make one OPK at least for each of them. We say *at least* 
 
 As there are several pieces necessary for the set to work, an installer has been created to install everything you need in one go. Specifically, the installer integrates this items:
 
-* 37+14 (official+unofficial) OPKs to launch the different core/system combinations independently from different frontends (GMenu2X, SimpleMenu, PyMenu, EmulationStation, etc.) by previously selecting the ROM (Explorer mode).
+* 37+31 (official+unofficial) OPKs to launch the different core/system combinations independently from different frontends (GMenu2X, SimpleMenu, PyMenu, EmulationStation, etc.) by previously selecting the ROM (Explorer mode).
 * Binary `retroarch_rg350` (or `retroarch_rg350_odbeta` for ODBeta) in common location (`/media/data/local/bin`) to be invoked by former OPKs to not be cloned inside them.
 * Configurations for all the cores differentiated by screen, that is, adequate configurations for 320x240 or 640x480 are installed depending on the screen detected. The settings have been adopted from the Retro Game Corps recommendations in [this guide](https://retrogamecorps.com/2020/12/24/guide-retroarch-on-rg350-and-rg280-devices/).
 * GMenu2X filters by extension for each system (including `7z` in all systems).
@@ -131,7 +131,7 @@ When launched, it ask for two options that are disabled by default:
 ![Installing options](images/installing_options.png)
 
 * Install config: To install the configurations refered in third spot in last list. The recommendation is to install the configurations the first time and not install them in subsequent installations to avoid losing the settings made on it.
-* Install unofficial cores: To install the 14 new but unofficial cores of [Poligraf](https://github.com/Poligraf/opendingux_ra_cores_unofficial).
+* Install unofficial cores: To install the 31 new but unofficial cores of [Poligraf](https://github.com/Poligraf/opendingux_ra_cores_unofficial).
 
 The OPK with the installer can be obtained in the releases of [this repository](https://github.com/eduardofilo/RG350_ra_installer/releases/latest).
 
