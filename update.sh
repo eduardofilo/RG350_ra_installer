@@ -17,7 +17,7 @@ echo "screen_color = (RED,RED,ON)" > /tmp/dialog_err.rc
 TEXTO="
 Choose if you want to install preset configurations of cores (if you have an old installation and made changes, they will be overwritten) and if you want to install unofficial cores.
 
-Use \Zb\Z3X\Zn to check options and \Zb\Z3OK\Zn to proceed with installation."
+Use \Zb\Z3X\Zn control to check options and \Zb\Z3OK\Zn to proceed with installation."
 
 # Ask options
 result=$(dialog --stdout --title "RA Installer config" --checklist "$TEXTO" 0 0 0 1 "Install config" off 2 "Install unofficial cores" off)
@@ -90,10 +90,13 @@ if [ ${INSTALL_UNOFF} = true ] ; then
     echo "Installing unofficial cores, please wait..."
     sleep 5
 
-    tar -xzf files/opendingux_ra_cores_unofficial.tgz -C /media/data/local/home/.retroarch/cores
-    tar -xzf files/configs_unoff.tgz -C /media/data/local/home/.retroarch/config
+    tar -xzf files/stock_cores_unoff.tgz -C /media/data/local/home/.retroarch/cores
+    tar -xzf files/configs_unoff_new.tgz -C /media/data/local/home/.retroarch/config
     tar -xzf files/apps_unoff.tgz -C /media/data/apps
     tar -xzf files/links_unoff.tgz -C /media/data/local/home/.gmenu2x/sections/retroarch
+    if [ ${INSTALL_CONF} = true ] ; then
+        tar -xzf files/configs_unoff.tgz -C /media/data/local/home/.retroarch/config
+    fi
     sync
     echo "  DONE"
 fi

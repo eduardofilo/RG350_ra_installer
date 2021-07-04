@@ -17,7 +17,7 @@ echo "screen_color = (RED,RED,ON)" > /tmp/dialog_err.rc
 TEXTO="
 Choose if you want to install preset configurations of cores (if you have an old installation and made changes, they will be overwritten) and if you want to install unofficial cores.
 
-Use \Zb\Z3X\Zn to check options and \Zb\Z3OK\Zn to proceed with installation."
+Use \Zb\Z3X\Zn control to check options and \Zb\Z3OK\Zn to proceed with installation."
 
 # Ask options
 result=$(dialog --stdout --title "RA Installer config" --checklist "$TEXTO" 0 0 0 1 "Install config" off 2 "Install unofficial cores" off)
@@ -32,18 +32,40 @@ if echo $result|grep -q "2"; then
 fi
 clear
 
-echo "Installing cores, please wait (about 2 minutes)..."
+echo "Installing cores, please wait (about 1 minute)..."
 sleep 5
 
 # Copying retroarch icon to all GMenu2X skins
-for filename in /media/data/local/home/.gmenu2x/skins/320x240/*/; do
-    mkdir -p "${filename}sections"
-    cp -f files_odb/retroarch.png "${filename}sections"
-done
-for filename in /media/data/local/home/.gmenu2x/skins/640x480/*/; do
-    mkdir -p "${filename}sections"
-    cp -f files_odb/retroarch.png "${filename}sections"
-done
+if [[ "$MODEL" == "RG350P" ]] ; then
+    for filename in /usr/share/gmenu2x/skins/320x240/*; do
+        skin=`basename $filename`
+        mkdir -p "/media/data/local/home/.gmenu2x/skins/320x240/${skin}/sections"
+    done
+    for filename in /media/data/local/home/.gmenu2x/skins/320x240/*; do
+        skin=`basename $filename`
+        mkdir -p "/media/data/local/home/.gmenu2x/skins/320x240/${skin}/sections"
+        if [[ "$skin" == "Pixel" ]] ; then
+            cp -f files_odb/retroarch_pixel.png "/media/data/local/home/.gmenu2x/skins/320x240/${skin}/sections/retroarch.png"
+        else
+            cp -f files_odb/retroarch.png "/media/data/local/home/.gmenu2x/skins/320x240/${skin}/sections"
+        fi
+    done
+fi
+if [[ "$MODEL" == "RG350M" ]] ; then
+    for filename in /usr/share/gmenu2x/skins/640x480/*; do
+        skin=`basename $filename`
+        mkdir -p "/media/data/local/home/.gmenu2x/skins/640x480/${skin}/sections"
+    done
+    for filename in /media/data/local/home/.gmenu2x/skins/640x480/*; do
+        skin=`basename $filename`
+        mkdir -p "/media/data/local/home/.gmenu2x/skins/640x480/${skin}/sections"
+        if [[ "$skin" == "Pixel" ]] ; then
+            cp -f files_odb/retroarch_pixel.png "/media/data/local/home/.gmenu2x/skins/640x480/${skin}/sections/retroarch.png"
+        else
+            cp -f files_odb/retroarch.png "/media/data/local/home/.gmenu2x/skins/640x480/${skin}/sections"
+        fi
+    done
+fi
 # Installing OPK and executable
 cp -f files_odb/retroarch_rg350_odbeta.opk /media/data/apps
 if [ -f /media/data/local/bin/retroarch ] ; then
@@ -90,10 +112,13 @@ if [ ${INSTALL_UNOFF} = true ] ; then
     echo "Installing unofficial cores, please wait..."
     sleep 5
 
-    tar -xzf files_odb/opendingux_ra_cores_unofficial.tgz -C /media/data/local/home/.retroarch/cores
-    tar -xzf files_odb/configs_unoff.tgz -C /media/data/local/home/.retroarch/config
+    tar -xzf files_odb/odbeta_cores_unoff.tgz -C /media/data/local/home/.retroarch/cores
+    tar -xzf files_odb/configs_unoff_new.tgz -C /media/data/local/home/.retroarch/config
     tar -xzf files_odb/apps_unoff.tgz -C /media/data/apps
     tar -xzf files_odb/links_unoff.tgz -C /media/data/local/home/.gmenu2x/sections/retroarch
+    if [ ${INSTALL_CONF} = true ] ; then
+        tar -xzf files_odb/configs_unoff.tgz -C /media/data/local/home/.retroarch/config
+    fi
     sync
     echo "  DONE"
 fi

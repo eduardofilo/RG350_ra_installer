@@ -46,56 +46,73 @@ This are the cores offered by the latest version of RetroArch released at the ti
 
 |Core|System|Supported extensions|Observations|
 |:---|:-----|:-------------------|:-----------|
+|dosbox_pure_libretro.so|DOSBox|zip, dosz, exe, com, bat, iso, cue, ins, img, ima, vhd, m3u, m3u8| |
 |fbalpha2012_cps1_libretro.so|CPS1|zip| |
 |fbalpha2012_cps2_libretro.so|CPS2|zip| |
 |fbalpha2012_neogeo_libretro.so|Neo Geo|zip| |
 |fceumm_libretro.so|NES|fds, nes, unif, unf|Disk System need BIOS: `disksys.rom` (md5: `ca30b50f880eb660a320674ed365ef7a`)|
-|gambatte_libretro.so|GB/GBC|gb, gbc, dmg|Optional BIOS: `gb_bios.bin` (md5: `32fbbd84168d3482956eb3c5051637f5`), `gbc_bios.bin` (md5: `dbfce9db9deaa2567f6a84fde55f9680`)|
-|genesis_plus_gx_libretro.so|MD, MS, GG, SEGA CD|mdx, md, smd, gen, bin, cue, iso, sms, bms, gg, sg, 68k, chd, m3u|SEGA CD need BIOS: `bios_CD_E.bin`, `bios_CD_U.bin`, `bios_CD_J.bin`|
-|genesis_plus_gx_wide_libretro.so|MD, MS, GG, SEGA CD|mdx, md, smd, gen, bin, cue, iso, sms, bms, gg, sg, 68k, chd, m3u|SEGA CD need BIOS: `bios_CD_E.bin`, `bios_CD_U.bin`, `bios_CD_J.bin`|
-|gpsp_libretro.so|GBA|gba, bin|Optional BIOS: `gba_bios.bin` (md5: `a860e8c0b6d573d191e4ec7db1b1e4f6`)|
-|handy_libretro.so|LYNX|lnx, o|Need BIOS: `lynxboot.img` (md5: `fcd403db69f54290b51035d82f835e7b`)|
-|mednafen_pce_fast_libretro.so|PCE, PCE CD|pce, cue, ccd, chd, toc, m3u|PCE CD need BIOS: `syscard3.pce` (md5: `38179df8f4ac870017db21ebcbf53114`)|
-|mednafen_wswan_libretro.so|WS|ws, wsc, pc2| |
-|mgba_libretro.so|GBA|gb, gbc, gba|Optional BIOS: `gba_bios.bin` (md5: `a860e8c0b6d573d191e4ec7db1b1e4f6`)|
-|mrboom_libretro.so|MrBoom| | |
-|picodrive_libretro.so|MD, MS, SEGA CD, SEGA 32X|bin, gen, smd, md, 32x, chd, cue, iso, sms, 68k, m3u|SEGA CD need BIOS: `bios_CD_U.bin` (md5: `2efd74e3232ff260e371b99f84024f7f`), `bios_CD_E.bin` (md5: `e66fa1dc5820d254611fdcdba0662372`), `bios_CD_J.bin` (md5: `278a9397d192149e84e820ac621a8edd`)|
-|pokemini_libretro.so|POKEMINI|min|Need BIOS: `bios.min` (md5: `1e4fb124a3a886865acb574f388c803d`)|
-|prboom_libretro.so|DOOM|wad, iwad, pwad|Need game files|
-|quicknes_libretro.so|NES|nes| |
-|race_libretro.so|NGP|ngp, ngc, ngpc, npc| |
-|snes9x2005_libretro.so|SNES|smc, fig, sfc, gd3, gd7, dx2, bsx, swc| |
-|snes9x2005_plus_libretro.so|SNES|smc, fig, sfc, gd3, gd7, dx2, bsx, swc| |
-|tyrquake_libretro.so|QUAKE|pak|Need game files|
-|vice_x64_libretro.so|C64|d64, d71, d80, d81, d82, g64, g41, x64, t64, tap, prg, p00, crt, bin, zip, gz, d6z, d7z, d8z, g6z, g4z, x6z, cmd, m3u, vfl, vsf, nib, nbz, d2m, d4m| |
-|stella2014_libretro.so|Atari 2600|a26, bin| |
-|prosystem_libretro.so|Atari 7800|a78, bin|Optional BIOS: `7800 BIOS (U).rom` (md5: `0763f1ffb006ddbe32e52d497ee848ae`)|
-|scummvm_libretro.so|ScummVM|<see file in core_info>| |
-|tic80_libretro.so|TIC-80|tic| |
-|potator_libretro.so|Watara Supervision|bin, sv| |
-|dosbox_pure_libretro.so|DOSBox|zip, dosz, exe, com, bat, iso, cue, ins, img, ima, vhd, m3u, m3u8| |
-|o2em_libretro.so|Magnavox Odyssey2, Phillips Videopac+|bin|Need BIOS: `o2rom.bin` (md5: `562d5ebf9e030a40d6fabfc2f33139fd`)|
+|gambatte_libretro.so|Nintendo GB/GBC|gb, gbc, dmg|Optional BIOS: `gb_bios.bin` (md5: `32fbbd84168d3482956eb3c5051637f5`), `gbc_bios.bin` (md5: `dbfce9db9deaa2567f6a84fde55f9680`)|
+|genesis_plus_gx_libretro.so|SEGA MD, MS, GG, SEGA CD|mdx, md, smd, gen, bin, cue, iso, sms, bms, gg, sg, 68k, chd, m3u|SEGA CD need BIOS: `bios_CD_E.bin`, `bios_CD_U.bin`, `bios_CD_J.bin`|
+|genesis_plus_gx_wide_libretro.so|SEGA MD, MS, GG, SEGA CD|mdx, md, smd, gen, bin, cue, iso, sms, bms, gg, sg, 68k, chd, m3u|SEGA CD need BIOS: `bios_CD_E.bin`, `bios_CD_U.bin`, `bios_CD_J.bin`|
+|gpsp_libretro.so|Nintendo GBA|gba, bin|Optional BIOS: `gba_bios.bin` (md5: `a860e8c0b6d573d191e4ec7db1b1e4f6`)|
+|handy_libretro.so|Atari Lynx|lnx, o|Need BIOS: `lynxboot.img` (md5: `fcd403db69f54290b51035d82f835e7b`)|
 |mame2003_libretro.so|MAME2003|zip| |
-|mame2003_plus_libretro.so|MAME2003|zip| |
+|mame2003_plus_libretro.so|MAME2003+|zip| |
+|mednafen_pce_fast_libretro.so|PC Engine, PC Engine CD|pce, cue, ccd, chd, toc, m3u|PCE CD need BIOS: `syscard3.pce` (md5: `38179df8f4ac870017db21ebcbf53114`)|
+|mednafen_wswan_libretro.so|WonderSwan|ws, wsc, pc2| |
+|mgba_libretro.so|Nintendo GBA|gb, gbc, gba|Optional BIOS: `gba_bios.bin` (md5: `a860e8c0b6d573d191e4ec7db1b1e4f6`)|
+|mrboom_libretro.so|MrBoom| | |
+|o2em_libretro.so|Magnavox Odyssey2, Phillips Videopac+|bin|Need BIOS: `o2rom.bin` (md5: `562d5ebf9e030a40d6fabfc2f33139fd`)|
+|picodrive_libretro.so|SEGA MD, MS, SEGA CD, SEGA 32X|bin, gen, smd, md, 32x, chd, cue, iso, sms, 68k, m3u|SEGA CD need BIOS: `bios_CD_U.bin` (md5: `2efd74e3232ff260e371b99f84024f7f`), `bios_CD_E.bin` (md5: `e66fa1dc5820d254611fdcdba0662372`), `bios_CD_J.bin` (md5: `278a9397d192149e84e820ac621a8edd`)|
+|pokemini_libretro.so|PokeMini|min|Need BIOS: `bios.min` (md5: `1e4fb124a3a886865acb574f388c803d`)|
+|potator_libretro.so|Watara Supervision|bin, sv| |
+|prboom_libretro.so|Doom|wad, iwad, pwad|Need game files|
+|prosystem_libretro.so|Atari 7800|a78, bin|Optional BIOS: `7800 BIOS (U).rom` (md5: `0763f1ffb006ddbe32e52d497ee848ae`)|
+|quicknes_libretro.so|Nintendo NES|nes| |
+|race_libretro.so|Neo Geo Pocket|ngp, ngc, ngpc, npc| |
+|scummvm_libretro.so|ScummVM|<see file in core_info>| |
+|snes9x2005_libretro.so|Nintendo SNES|smc, fig, sfc, gd3, gd7, dx2, bsx, swc| |
+|snes9x2005_plus_libretro.so|Nintendo SNES|smc, fig, sfc, gd3, gd7, dx2, bsx, swc| |
+|stella2014_libretro.so|Atari 2600|a26, bin| |
+|tic80_libretro.so|TIC-80|tic| |
+|tyrquake_libretro.so|Quake|pak|Need game files|
+|vice_x64_libretro.so|Commodore 64|d64, d71, d80, d81, d82, g64, g41, x64, t64, tap, prg, p00, crt, bin, zip, gz, d6z, d7z, d8z, g6z, g4z, x6z, cmd, m3u, vfl, vsf, nib, nbz, d2m, d4m| |
 
 Additionally, the compilation of unofficial cores made by [Poligraf](https://github.com/Poligraf/opendingux_ra_cores_unofficial) is included (**WARNING**: this compilation is an experiment by its author; some cores like `hatari` and `puae` have not been tested; feedback is welcome). This involves adding the following cores to the former list:
 
 |Core|System|Supported extensions|Observations|
 |:---|:-----|:-------------------|:-----------|
+|2048_libretro.so|[2048](https://en.wikipedia.org/wiki/2048_(video_game))| | |
 |81_libretro.so|Sinclair ZX81|p, tzx, t81| |
-|bk_libretro.so|Elektronika - BK-0010/BK-0011|bin|Need BIOS: `bk/BASIC10.ROM` (md5: `3fa774326d75410a065659aea80252f0`), `bk/FOCAL10.ROM` (md5: `5737f972e8638831ab71e9139abae052`), `bk/MONIT10.ROM` (md5: `95f8c41c6abf7640e35a6a03cecebd01`)|
-|cannonball_libretro.so|SEGA Outrun|game, 88|Need game files and a dummy file with the extension `.game`|
+|atari800_libretro.so|Atari 5200|xfd,atr,cdm,cas,bin,a52,zip,atx,car,com,xex|Needs BIOS to emulate Atari5200: `5200.rom` (md5: `281f20ea4320404ec820fb7ec0693b38`)|
+|bk_libretro.so|Elektronika - BK-0010/BK-0011|bin|Needs BIOS (model `BK-0010`): `bk/BASIC10.ROM` (md5: `3fa774326d75410a065659aea80252f0`), `bk/FOCAL10.ROM` (md5: `5737f972e8638831ab71e9139abae052`), `bk/MONIT10.ROM` (md5: `95f8c41c6abf7640e35a6a03cecebd01`). Unsupported video mode on stock/ROGUE.|
+|bluemsx_libretro.so|MSX, MSX2|rom,ri,mx1,mx2,col,dsk,cas,sg,sc,m3u|Needs BIOS in `.retroarch/system/Machines` directory|
+|cannonball_libretro.so|SEGA Outrun|game, 88|Needs game files and a dummy file with the extension `.game`|
 |cap32_libretro.so|Amstrad CPC|dsk, sna, zip, tap, cdt, voc, cpr, m3u| |
-|freechaf_libretro.so|Fairchild ChannelF|bin, chf|Need BIOS: `sl31253.bin` (md5: `ac9804d4c0e9d07e33472e3726ed15c3`), `sl31254.bin` (md5: `da98f4bb3242ab80d76629021bb27585`), `sl90025.bin` (md5: `95d339631d867c8f1d15a5f2ec26069d`)|
+|crocods_libretro.so|Amstrad CPC|dsk,sna,kcr| |
+|dinothawr_libretro.so|Dinothawr|game|Needs [game files](https://buildbot.libretro.com/assets/cores/Dinothawr/Dinothawr.zip)|
+|fmsx_libretro.so|MSX, MSX2|rom,mx1,mx2,dsk,cas|Needs BIOS: `MSX.ROM` (md5: `364a1a579fe5cb8dba54519bcfcdac0d`), `MSX2.ROM` (md5: `ec3a01c91f24fbddcbcab0ad301bc9ef`), `MSX2EXT.ROM` (md5: `2183c2aff17cf4297bdb496de78c2e8a`), `MSX2P.ROM` (md5: `847cc025ffae665487940ff2639540e5`), `MSX2PEXT.ROM` (md5: `7c8243c71d8f143b2531f01afa6a05dc`). Unsupported video mode on RG280/ODBeta.|
+|freechaf_libretro.so|Fairchild ChannelF|bin, chf|Needs BIOS: `sl31253.bin` (md5: `ac9804d4c0e9d07e33472e3726ed15c3`), `sl31254.bin` (md5: `da98f4bb3242ab80d76629021bb27585`), `sl90025.bin` (md5: `95d339631d867c8f1d15a5f2ec26069d`)|
+|frodo_libretro.so|Commodore 64|d64,t64,x64,p00,lnx,zip| |
 |fuse_libretro.so|Sinclair ZX Spectrum|tzx, tap, z80, rzx, scl, trd, dsk| |
 |gme_libretro.so|Game Music Emu|ay, gbs, gym, hes, kss, nsf, nsfe, sap, spc, vgm, vgz, zip| |
-|hatari_libretro.so|Atari ST|st, msa, zip, stx, dim, ipf, m3u|Need BIOS: `tos.img` (md5: `c1c57ce48e8ee4135885cee9e63a68a2`). Difficult configuration. Achieved some success with RG350M, but not with RG350P|
+|gw_libretro.so|Nintendo Game&Watch|mgw|Unsupported video mode in some games on stock/ROGUE, but pressing keys sometimes they run|
+|hatari_libretro.so|Atari ST|st, msa, zip, stx, dim, ipf, m3u|Needs BIOS: `tos.img` (md5: `c1c57ce48e8ee4135885cee9e63a68a2`). Difficult configuration because of unsupported video mode. Achieved some success with beta, but not with stock/ROGUE.|
+|lowresnx_libretro.so|LowRes NX|nx| |
 |mednafen_vb_libretro.so|Nintendo Virtual Boy|vb, vboy, bin|Poor performance|
-|nxengine_libretro.so|Cave Story|exe|Need game files|
-|puae_libretro.so|Commodore Amiga|adf, adz, dms, fdi, ipf, hdf, hdz, lha, slave, info, cue, ccd, nrg, mds, iso, chd, uae, m3u, zip, 7z|Need BIOS: `kick34005.A500` (md5: `82a21c1890cae844b3df741f2762d48d`)|
-|reminiscence_libretro.so|Flashback|map, aba, seq, lev|Need game files|
-|theodore_libretro.so|Thomson - MO/TO|fd, sap, k7, m7, m5, rom|Difficult configuration. Achieved some success with MO5 model in ODBeta with RG350M, but not in stock/ROGUE|
+|mu_libretro.so|Palm|prc,pqa,img|Needs BIOS: `palmos41-en-m515.rom` (md5: `83cb1d1c76e568b916dc2e7c0bf669f6`). Needs a stick to manage the stylus, so doesn't run on RG280V.|
+|nekop2_libretro.so|NEC PC-98|d98,zip,98d,fdi,fdd,2hd,tfd,d88,88d,hdm,xdf,dup,cmd,hdi,thd,nhd,hdd|I couldn't get it to work. May be it [needs some BIOS](https://docs.libretro.com/library/neko_project_ii_kai/#bios).|
+|nxengine_libretro.so|Cave Story|exe|Needs game files|
+|pcsx_rearmed_libretro.so|PlayStation|bin,cue,img,mdf,pbp,toc,cbn,m3u,ccd,chd|Poor performance.|
+|[pocketcdg_libretro.so](https://docs.libretro.com/library/pocketcdg/)|PocketCDG|cdg| |
+|puae_libretro.so|Commodore Amiga|adf, adz, dms, fdi, ipf, hdf, hdz, lha, slave, info, cue, ccd, nrg, mds, iso, chd, uae, m3u, zip, 7z|Needs BIOS: `kick34005.A500` (md5: `82a21c1890cae844b3df741f2762d48d`)|
+|quasi88_libretro.so|NEC PC-88|d88,u88,m3u|Needs BIOS: `quasi88/n88.rom`, `quasi88/n88_0.rom`|
+|reminiscence_libretro.so|Flashback|map, aba, seq, lev|Needs game files. I couldn't get it to work.|
+|stonesoup_libretro.so|Dungeon Crawl Stone Soup|crawlrc|Needs [game files](https://github.com/libretro/crawl-ref/tree/master/crawl-ref/source/dat) and an empty file `game.crawlrc` (instructions [here](https://docs.libretro.com/library/stone_soup/#how-to-start-the-dungeon-crawl-stone-soup-core)). Unsupported video mode on RG280/stock/ROGUE, reboots on beta.|
+|theodore_libretro.so|Thomson - MO/TO|fd, sap, k7, m7, m5, rom|Difficult configuration because of unsupported video mode. Achieved some success with MO5 model on ODBeta, but not on stock/ROGUE.|
 |uzem_libretro.so|Uzebox|uze|Poor performance|
+|vecx_libretro.so|Vectrex|bin,vec| |
+|x1_libretro.so|Sharp X1|dx1,zip,2d,2hd,tfd,d88,88d,hdm,xdf,dup,tap,cmd|Needs BIOS: `xmil/IPLROM.X1` (md5: `eeeea1cd29c6e0e8b094790ae969bfa7`), `xmil/IPLROM.X1T` (md5: `851e4a5936f17d13f8c39a980cf00d77`)|
 
 Therefore, we have to make one OPK at least for each of them. We say *at least* because the option of making an OPK for each "core/system to emulate" combination can be considered.
 
