@@ -50,7 +50,7 @@ This are the cores offered by the latest version of RetroArch released at the ti
 |fbalpha2012_cps1_libretro.so|CPS1|zip| |
 |fbalpha2012_cps2_libretro.so|CPS2|zip| |
 |fbalpha2012_neogeo_libretro.so|Neo Geo|zip| |
-|fceumm_libretro.so|NES|fds, nes, unif, unf|Disk System need BIOS: `disksys.rom` (md5: `ca30b50f880eb660a320674ed365ef7a`)|
+|fceumm_libretro.so|Nintendo NES|fds, nes, unif, unf|Disk System need BIOS: `disksys.rom` (md5: `ca30b50f880eb660a320674ed365ef7a`)|
 |gambatte_libretro.so|Nintendo GB/GBC|gb, gbc, dmg|Optional BIOS: `gb_bios.bin` (md5: `32fbbd84168d3482956eb3c5051637f5`), `gbc_bios.bin` (md5: `dbfce9db9deaa2567f6a84fde55f9680`)|
 |genesis_plus_gx_libretro.so|SEGA MD, MS, GG, SEGA CD|mdx, md, smd, gen, bin, cue, iso, sms, bms, gg, sg, 68k, chd, m3u|SEGA CD need BIOS: `bios_CD_E.bin`, `bios_CD_U.bin`, `bios_CD_J.bin`|
 |genesis_plus_gx_wide_libretro.so|SEGA MD, MS, GG, SEGA CD|mdx, md, smd, gen, bin, cue, iso, sms, bms, gg, sg, 68k, chd, m3u|SEGA CD need BIOS: `bios_CD_E.bin`, `bios_CD_U.bin`, `bios_CD_J.bin`|
@@ -97,7 +97,7 @@ Additionally, the compilation of unofficial cores made by [Poligraf](https://git
 |fuse_libretro.so|Sinclair ZX Spectrum|tzx, tap, z80, rzx, scl, trd, dsk| |
 |gme_libretro.so|Game Music Emu|ay, gbs, gym, hes, kss, nsf, nsfe, sap, spc, vgm, vgz, zip| |
 |gw_libretro.so|Nintendo Game&Watch|mgw|Unsupported video mode in some games on stock/ROGUE, but pressing keys sometimes they run|
-|hatari_libretro.so|Atari ST|st, msa, zip, stx, dim, ipf, m3u|Needs BIOS: `tos.img` (md5: `c1c57ce48e8ee4135885cee9e63a68a2`). Difficult configuration because of unsupported video mode. Achieved some success with beta, but not with stock/ROGUE.|
+|hatari_libretro.so|Atari ST|st, msa, zip, stx, dim, ipf, m3u|Needs BIOS: `tos.img` (md5: `c1c57ce48e8ee4135885cee9e63a68a2`). Difficult configuration because of unsupported video mode. Achieved some success with ODBeta, but not with stock/ROGUE.|
 |lowresnx_libretro.so|LowRes NX|nx| |
 |mednafen_vb_libretro.so|Nintendo Virtual Boy|vb, vboy, bin|Poor performance|
 |mu_libretro.so|Palm|prc,pqa,img|Needs BIOS: `palmos41-en-m515.rom` (md5: `83cb1d1c76e568b916dc2e7c0bf669f6`). Needs a stick to manage the stylus, so doesn't run on RG280V.|
